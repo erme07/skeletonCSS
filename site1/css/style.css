@@ -50,6 +50,12 @@ header h1 {
   font-size: 7rem;
   font-weight: bold;
 }
+header .social-bar {
+  display: none;
+}
+.social-bar a {
+  color: var(--secondColor);
+}
 .menu {
   font-size: 1.3rem;
   font-weight: bold;
@@ -77,16 +83,6 @@ header h1 {
 }
 .menu li:hover a {
   color: var(--fourthColor);
-}
-
-header .social-bar {
-  display: none;
-}
-.social-bar a {
-  color: var(--secondColor);
-}
-footer .social-bar a {
-  color: var(--thirdColor);
 }
 .featured .columns,
 .featured .column {
@@ -129,7 +125,15 @@ footer .social-bar a {
 .blog__image {
   margin-bottom: 0.5rem;
 }
-
+.blog__content {
+  text-align: center;
+}
+.galeria__item {
+  padding: 15px 15px 30px;
+  background-color: white;
+  border-radius: 1%;
+  margin-bottom: 2rem;
+}
 .contact__image {
   display: none;
 }
@@ -146,6 +150,9 @@ footer .social-bar {
   gap: 1.5rem;
   margin-bottom: 0.5rem;
 }
+footer .social-bar a {
+  color: var(--thirdColor);
+}
 footer h3 {
   text-transform: uppercase;
   font-weight: bold;
@@ -154,35 +161,29 @@ footer h3 {
 section {
   margin-bottom: 5rem !important;
 }
-.galeria__item {
-  padding: 15px 15px 30px;
-  background-color: white;
-  border-radius: 1%;
-  margin-bottom: 2rem;
-}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   h4 {
     font-size: 2.6rem;
   }
-  .featured .one-half.column {
-    width: 100%;
-  }
   header .social-bar {
     display: flex;
     gap: 1rem;
   }
+  .featured .one-half.column {
+    width: 100%;
+  }
   .menu {
     font-size: unset;
-  }
-  .contact .eight.columns {
-    width: 100%;
   }
   .blog .four.columns {
     width: 100%;
   }
   .blog .eight.columns {
+    width: 100%;
+  }
+  .contact .eight.columns {
     width: 100%;
   }
 }
@@ -212,6 +213,9 @@ section {
   .contact .eight.columns,
   .blog .eight.columns {
     width: 65.3333333333%;
+  }
+  .blog__content {
+    text-align: left;
   }
   .contact__image {
     display: flex;
