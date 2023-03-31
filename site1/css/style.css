@@ -4,7 +4,9 @@
   --thirdColor: #dde5d6;
   --fourthColor: #eae4ca;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--fourthColor);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
