@@ -132,9 +132,6 @@ footer .social-bar a {
   display: none;
 }
 footer {
-  /* display: flex;
-  justify-content: center;
-  padding: 1rem; */
   padding-top: 2rem;
   background-color: var(--secondColor);
   color: var(--thirdColor);
@@ -160,10 +157,6 @@ section {
   background-color: white;
   border-radius: 1%;
   margin-bottom: 2rem;
-}
-
-/* Larger than mobile */
-@media (min-width: 400px) {
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -221,12 +214,4 @@ section {
   .contact__image {
     display: flex;
   }
-}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {
-}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {
 }
