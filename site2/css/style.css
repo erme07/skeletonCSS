@@ -48,8 +48,7 @@ body {
   font-weight: 600;
 }
 .menu li:hover {
-  background-color: var(--second-color);
-  color: var(--back-color);
+  background-color: var(--back-color);
 }
 .menu__toggle {
   position: absolute;
@@ -123,11 +122,32 @@ body {
 .gallery .row:last-child {
   margin-bottom: 8rem;
 }
-
+.contact {
+  background-color: var(--back-color);
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+.contact label,
+.contact h4 {
+  color: var(--text-color);
+}
+textarea:focus,
+input[type="email"]:focus,
+select:focus {
+  border: 1px solid var(--main-color);
+  outline: 0;
+}
+input[type="submit"].button-primary {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+input[type="submit"].button-primary:hover {
+  background-color: #35252e;
+  border-color: #35252e;
+}
 footer {
   background-color: var(--main-color);
 }
-
 /* Larger than mobile */
 @media (min-width: 400px) {
   .menu__toggle {
@@ -139,7 +159,7 @@ footer {
 @media (min-width: 550px) {
   .blog__content.columns,
   .blog__image.columns,
-  .six.columns {
+  .blog_content.six.columns {
     width: 100%;
   }
   .blog .column,
