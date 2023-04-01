@@ -34,13 +34,13 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
-.menu {
+.menu ul {
   list-style: none;
-  display: flex;
   gap: 10px;
   text-decoration: none;
   margin-bottom: 0;
   text-transform: uppercase;
+  display: none;
 }
 .menu li {
   padding: 0.5rem 1rem;
@@ -50,6 +50,11 @@ body {
 .menu li:hover {
   background-color: var(--second-color);
   color: var(--back-color);
+}
+.menu__toggle {
+  position: absolute;
+  right: 2rem;
+  bottom: 0.2rem;
 }
 
 .hero {
@@ -116,12 +121,16 @@ body {
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+  .menu__toggle {
+    right: 0;
+  }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   .blog__content.columns,
-  .blog__image.columns {
+  .blog__image.columns,
+  .six.columns {
     width: 100%;
   }
   .blog .column,
@@ -132,6 +141,12 @@ body {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  .menu ul {
+    display: flex;
+  }
+  .menu__toggle {
+    display: none;
+  }
   .blog .column,
   .blog .columns {
     margin-left: 4%;
@@ -143,7 +158,7 @@ body {
   .blog .five.columns {
     width: 39.3333333333%;
   }
-  .blog .six.columns {
+  .six.columns {
     width: 48%;
   }
   .blog .offset-by-one.column,
