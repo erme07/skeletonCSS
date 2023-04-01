@@ -147,7 +147,17 @@ input[type="submit"].button-primary:hover {
 }
 footer {
   background-color: var(--main-color);
+  padding: 1.5rem;
+  text-align: center;
 }
+.social-bar {
+  color: var(--text-color);
+  text-align: center;
+}
+.social-bar a {
+  padding: 0 1rem;
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {
   .menu__toggle {
