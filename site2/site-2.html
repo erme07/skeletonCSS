@@ -20,34 +20,107 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script
+      src="https://kit.fontawesome.com/768709101c.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="../skeleton/css/normalize.css" />
     <link rel="stylesheet" href="../skeleton/css/skeleton.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="../skeleton/img/favicon.png" />
   </head>
   <body>
-    <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
-      <div class="row">
-        <div class="one-half column" style="margin-top: 25%">
-          <h4>Basic Page</h4>
-          <p>
-            This index.html page is a placeholder with the CSS, font and
-            favicon. It's just waiting for you to add some content! If you need
-            some help hit up the
-            <a href="http://www.getskeleton.com">Skeleton documentation</a>.
-          </p>
+    <nav class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="six columns logo">
+            <h2>Logo</h2>
+          </div>
+          <div class="six columns">
+            <ul class="u-pull-right menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#">item3</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </nav>
+    <section class="hero">
+      <div class="hero__overlay">
+        <div class="container">
+          <div class="row">
+            <h2 class="hero__heading">Skeleton Proyect</h2>
+          </div>
+        </div>
+        <div class="hero__button">
+          <a href="#blog"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="blog" id="blog">
+        <div class="container">
+          <div class="row">
+            <h4 class="section__title">Blog</h4>
+          </div>
+          <article class="row blog__item">
+            <div class="five columns blog__image">
+              <img class="u-full-width" src="https://picsum.photos/id/96/400" />
+            </div>
+            <div class="offset-by-one six columns blog__content">
+              <h2>Título Articulo</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam dolores similique tempore asperiores quisquam nisi
+                ratione aut quae ipsum incidunt!.
+              </p>
+            </div>
+          </article>
+          <article class="row blog__item">
+            <div class="five columns u-pull-right blog__image">
+              <img
+                class="u-pull-right u-full-width"
+                src="https://picsum.photos/id/367/400"
+              />
+            </div>
+            <div class="six columns u-pull-left blog__content">
+              <h2>Título Articulo</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+                est dolor omnis illum asperiores quia. Cumque porro laborum
+                autem saepe eius, iure id. Dolore modi praesentium ea ullam
+                maxime quos!
+              </p>
+            </div>
+          </article>
+          <article class="row blog__item">
+            <div class="five columns blog__image">
+              <img
+                class="u-full-width"
+                src="https://picsum.photos/id/370/400"
+              />
+            </div>
+            <div class="offset-by-one six columns blog__content">
+              <h2>Título Articulo</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                velit earum dolore neque quibusdam, similique obcaecati maiores
+                sequi, accusantium, perferendis eius natus voluptate explicabo
+                fugiat.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer><br /><br /><br /><br /><br /></footer>
   </body>
 </html>
